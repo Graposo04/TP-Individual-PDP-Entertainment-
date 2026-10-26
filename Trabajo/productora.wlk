@@ -3,7 +3,7 @@ object productora {
     
     var property impuesto = 100
     const property bandas = [] //La productora trae una lista de bandas (Colecciones)
-    const property asistentes = []
+    const property asistentes = [] //Lista de asistentes (Colecciones)
 
   method registrarAsistente(asistente) { asistentes.add(asistente) }
 

@@ -19,4 +19,4 @@ class Vip inherits Abono {
     override method bonificar () {descuento += 1}
 }
 
-//Tanto Fan y Vip responden a descuento y bonificar  (Polimorfismo)
+//Tanto Fan y Vip responden igual a descuento y bonificar  (Polimorfismo) el asistente no sabe cual tiene

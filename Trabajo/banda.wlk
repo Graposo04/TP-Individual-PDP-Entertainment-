@@ -1,5 +1,6 @@
 // Bandas va a ser una clase abstracta ya que tengo varias bandas pero de distinto tipo por lo cual uso subclases para las 3
 
+//Banda tiene el comportamiento comun
 class Banda {
   const property nombre
 
@@ -10,6 +11,8 @@ class Banda {
   method presupuesto() = self.canon() + self.gastoExtra()
 }
 
+//En popularidad y gastoExtra se ve el uso de polimorfismo  y como presupuesto funciona con cualquiera
+
 class Rock inherits Banda {
   const solosDeGuitarra
 
@@ -17,6 +20,7 @@ class Rock inherits Banda {
   override method popularidad() = 100 * solosDeGuitarra
 }
 
+//En el canon del Trap redefine el de Banda usando super() para reusar el canon base (Herencai y redefinicion)
 class Trap inherits Banda {
   const tieneHielo
 
