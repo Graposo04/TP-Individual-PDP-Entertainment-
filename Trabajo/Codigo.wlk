@@ -1,3 +1,4 @@
+/*
 // Productora la defino como un objeto ya que es una persona especifica
 object productora {
     
@@ -79,4 +80,4 @@ class Vip inherits Abono {
 
 class Banda{
 
-}
+}*/

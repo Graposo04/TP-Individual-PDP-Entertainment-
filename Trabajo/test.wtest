@@ -1,0 +1,38 @@
+import productora.*
+import asistente.*
+import abonos.*
+import banda.*
+
+describe "PDEP Entertainment" {
+  const facilB = new Trap(nombre = "Facil B", tieneHielo = true)
+  const rockera = new Rock(nombre = "La coja", solosDeGuitarra = 3)
+  const fecha = new Date(day = 15, month = 3, year = 2025)
+  const gonza = new Asistente(abono = new Vip(descuento = 10), dinero = 5000)
+
+  method initialize() {
+    productora.registrarAsistente(gonza)
+    productora.registrarBanda(facilB)
+    productora.registrarBanda(rockera)
+  }
+
+  test "comprar descuenta dinero con descuento vip y guarda en historial" {
+    gonza.comprarEntrada(rockera, fecha)
+    assert.equals(1, gonza.historial().size())
+    assert.equals(5000 - 990, gonza.dinero())
+  }
+
+  test "no puede comprar con saldo negativo" {
+    const pobre = new Asistente(abono = new Fan(), dinero = -5)
+    assert.throwsException({ pobre.comprarEntrada(rockera, fecha) })
+  }
+
+  test "canon del trap con hielo" {
+    assert.equals(1000000000, facilB.canon())
+  }
+
+  test "bonificar sube el descuento vip" {
+    gonza.bonificar()
+    gonza.comprarEntrada(rockera, fecha)
+    assert.equals(5000 - 979, gonza.dinero())
+  }
+}
