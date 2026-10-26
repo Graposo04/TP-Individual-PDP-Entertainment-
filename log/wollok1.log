@@ -171,3 +171,7 @@
 {"level":"info","message":"⌛ Building environment","timeElapsed":130,"timestamp":"2026-10-26T19:49:31.299Z"}
 {"level":"info","message":"⌛ Building environment","timeElapsed":111,"timestamp":"2026-10-26T19:50:33.718Z"}
 {"level":"info","message":"⌛ Building environment","timeElapsed":222,"timestamp":"2026-10-26T19:51:30.123Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":109,"timestamp":"2026-10-26T19:56:47.092Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Gonzalo/TP-Individual-PDP-Entertainment-/Trabajo/Codigo.wlk","timestamp":"2026-10-26T19:56:47.258Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Gonzalo/TP-Individual-PDP-Entertainment-/Codigo.wlk","timestamp":"2026-10-26T19:57:09.203Z"}
+{"level":"info","message":"🧪 Test runner executed on c:\\Users\\Gonzalo\\TP-Individual-PDP-Entertainment-","result":{"errored":0,"failed":0,"ok":4},"testsFailed":[],"timeElapsed":246,"timestamp":"2026-10-26T19:57:18.467Z"}
