@@ -1,0 +1,17 @@
+/*
+1_ Polimorfismo: Fan y Vip responden igual a descuento() y bonificar(). El asistente no sabe cual tiene. Lo mismo pasa con popularidad() y gastoExtra() en las banda, y presupuesto() funciona con cualquiera
+
+2_ Herencia y redefinicion con super: Banda tiene el comportamiento comun. Trap.canon() redefine usando super() para reusar el canon base
+
+3_ Delegacion: El asistente delega el calculo del monto en el abono, y la entra delega el impuesto en la productora
+
+4_ Encapsulamiento: historial devuelve una copia, y quien quiera comprar tiene que usar comprarEntrada
+
+5_ Composicion sobre herencia: El abono es un objeto que el asistente tiene
+
+6_ Manejo de errores: self.error(..) corta la compra si el saldo no es positivo
+
+7_ Colecciones: filter, map, sum, max, count forman parte del codigo
+
+Estas justificaciones tambien forman parte dentro del codigo dentro de los comentarios realizados. 
+*/
